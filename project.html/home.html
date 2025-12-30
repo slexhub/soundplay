@@ -1,469 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PulseHub | Entertainment for Everyone</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>SoundPlay Hub</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=BBH+Bartle&family=BBH+Bogle&family=Manrope:wght@200..800&family=Titan+One&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="try.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-    body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: black;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(45deg, black, white);
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #222;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: black;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: white;
-}
-
-.hero button {
-    padding: 12px 25px;
-    background: black;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero button:hover {
-    background: black;
-}
-
-.content {
-    padding: 40px 20px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.content h2 {
-    color: #ff4500;
-}
-
-article {
-    margin-top: 15px;
-}
-
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(45deg, black, white);
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-}
-
-header p {
-    font-size: 1rem;
-}
-
-/* NAVIGATION */
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #222;
-}
-
-nav a {
-    color: white;
-    padding: 14px 18px;
-    text-decoration: none;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    background: black;
-}
-
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(45deg, black, white);
-}
-
-.hero h2 {
-    font-size: 2rem;
-}
-
-.hero p {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 10px auto;
-}
-
-.hero button {
-    padding: 12px 25px;
-    background: black;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero button:hover {
-    background: black;
-}
-
-/* CONTENT SECTIONS */
-.content {
-    padding: 30px 20px;
-    background: #fff;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 1000px;
-}
-
-.content h2 {
-    color: black;
-    font-size: 1.6rem;
-}
-
-article h3 {
-    font-size: 1.2rem;
-}
-
-/* FOOTER */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-}
-
-/* 📱 MOBILE RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav a {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
-
-    .hero {
-        padding: 40px 15px;
-    }
-
-    .hero h2 {
-        font-size: 1.6rem;
-    }
-
-    .content {
-        margin: 15px;
-        padding: 25px 15px;
-    }
-}
-
-/* 📱 SMALL PHONES */
-@media (max-width: 480px) {
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    header p {
-        font-size: 0.9rem;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #333;
-    }
-
-    .hero h2 {
-        font-size: 1.4rem;
-    }
-
-    .hero button {
-        width: 100%;
-        max-width: 250px;
-    }
-
-
-    * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-}
-
-.latest-news {
-  max-width: 1200px;
-  margin: 30px auto;
-}
-
-.news-wrapper {
-  display: flex;
-  gap: 30px;
-}
-
-/* FEATURED LEFT */
-.featured {
-  position: relative;
-  width: 65%;
-}
-
-.featured img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-  display: flex;
-  align-items: flex-end;
-  padding: 15px;
-}
-
-.brand {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.brand span {
-  font-weight: normal;
-}
-
-/* RIGHT LIST */
-.news-list {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.news-item {
-  display: flex;
-  gap: 15px;
-}
-
-.news-item img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.news-text h3 {
-  font-size: 15px;
-  margin: 5px 0 0;
-  line-height: 1.3;
-}
-
-.meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  font-weight: bold;
-}
-
-.category {
-  letter-spacing: 1px;
-}
-
-.entertainment {
-  color: #e63946;
-}
-
-.music {
-  color: #d00000;
-}
-
-.date {
-  color: #888;
-  font-weight: normal;
-}
-</style>
 <body>
 
-<header>
-    <h1>🔥 SOUNDPLAY HUB</h1>
-    <p>Entertainment • News • Sports • Lifestyle • Tech</p>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+          <div class="logo ms-1 p-2 fs-1"><a href="#"> SOUNDPLAY <span class="text-white">HUB</span></a></div>
 
-<nav>
-    <a href="home">Home</a>
-    <a href="news">News</a>
-    <a href="sports">Sports</a>
-    <a href="entertainment">Entertainment</a>
-    <a href="lifestyle">Lifestyle</a>
-    <a href="tech">Tech</a>
-</nav>
+      
+    </a>
 
-<section id="home" class="hero">
-    <h2>Welcome to SOUNDPLAY HUB</h2>
-    <p>Your daily dose of trending stories for young and old.</p>
-    <button onclick="showAlert()">Explore Now</button>
-</section>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<section id="news" class="content">
-    
-
-  <div class="news-wrapper">
-
-    <!-- LEFT FEATURED IMAGE -->
-    <div class="featured">
-      <img src="featured.jpg" alt="Featured News">
-      <div class="overlay">
-        <span class="brand">pulse<span>list</span></span>
-      </div>
-    </div>
-
-    <!-- RIGHT NEWS LIST -->
-    <div class="news-list">
-
-      <div class="news-item">
-        <img src="Seyi.jpg" alt="" width="100px" height="100px">
-        <div class="news-text">
-          <div class="meta">
-            <span class="category entertainment">ENTERTAINMENT</span>
-            <span class="date">24.12.2025</span>
-          </div>
-          <h3>Carter Efe's Twitch Paradox: Viral but Vulnerable</h3>
-        </div>
-      </div>
-
-      <div class="news-item">
-        <img src="Seyi.jpg" alt="" width="100px" height="100px">
-        <div class="news-text">
-          <div class="meta">
-            <span class="category NEWS">NEWS</span>
-            <span class="date">24.12.2025</span>
-          </div>
-          <h3>Inside Seyi Vibez’s Quiet Domination of 2025</h3>
-        </div>
-      </div>
-
-      <div class="news-item">
-        <img src="Seyi.jpg" alt="" width="100px" height="100px">
-        <div class="news-text">
-          <div class="meta">
-            <span class="category news">NEWS</span>
-            <span class="date">24.12.2025</span>
-          </div>
-          <h3>Pulse List: The Top 10 Breakout Stars of 2025</h3>
-        </div>
-      </div>
-
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-4">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Entertainment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
+      </ul>
     </div>
   </div>
+</nav>
 
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center text-white">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">
+      Discover What’s <span class="text-green">Trending</span>
+    </h1>
+    <p class="lead mt-3">
+      News, entertainment, tech & lifestyle stories — all in one hub.
+    </p>
+    <div class="mt-4">
+      <a href="#" class="btn btn-green btn-lg px-5">
+        Explore Now 🚀
+      </a>
+    </div>
+  </div>
 </section>
 
-<section id="sports" class="content">
-    <h2>⚽ Sports Zone</h2>
-    <article>
-        <h3>Match Highlights</h3>
-        <p>Football, basketball, athletics, and more.</p>
-    </article>
+<!-- FEATURED NEWS -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold mx-5">
+        Featured Stories <span class="higlights fs-4 fw-normal"> <a href="">/Top News</a> <a href="">/Sports</a>  <a href="">/Entertainment</a> <a href="">/Tech</a> </span>
+      </h2>
+      <!-- <a href="#" class="text-decoration-none accent-orange fw-semibold">
+        View All →
+      </a> -->
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-lg-7 col-xl-7">
+        <div class="card border-0 shadow card-hover h-100">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="card-img-top" alt="">
+          <div class="card-body">
+            <span class="badge bg-black text-green mb-2">Entertainment</span>
+            <h5 class="card-title fw-semibold mt-2">
+              Carter Efe’s Twitch Paradox
+            </h5>
+            <p class="card-text text-muted">
+              Viral fame meets vulnerability in the digital age.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-xl-4">
+        <div class="card border-0 shadow card-hover h-100">
+          <div class="card-body">
+            <span class="badge bg-black text-green mb-2 fs-4">Latest News</span>
+            <img src="/project.html/Seyi.jpg" alt="" style="width: 100%; height: fit-content;" srcset="">
+            
+            <h5 class="card-title fw-semibold mt-2">
+              AI Tools Shaping 2025
+            </h5>
+            <p class="card-text text-muted">
+              How automation is redefining creativity and work.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow card-hover h-100">
+          <img src="https://images.unsplash.com/photo-1505842465776-3d90f616310d" class="card-img-top" alt="">
+          <div class="card-body">
+            <span class="badge bg-black text-green mb-2">Sports</span>
+            <h5 class="card-title fw-semibold mt-2">
+              Rising Stars to Watch
+            </h5>
+            <p class="card-text text-muted">
+              The next generation taking over the sports world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="entertainment" class="content">
-    <h2>🎬 Entertainment</h2>
-    <article>
-        <h3>Movies, Music & Celebrities</h3>
-        <p>Latest movies, trending songs, and celebrity stories.</p>
-    </article>
+<!-- CALL TO ACTION -->
+<section class="bg-black text-white py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold">
+      Stay Ahead of the <span class="text-green">Buzz</span>
+    </h2>
+    <p class="text-muted mt-2">
+      Get daily updates on what’s hot and happening.
+    </p>
+    <a href="#" class="btn btn-green mt-3 px-4">
+      Subscribe Now 🔔
+    </a>
+  </div>
 </section>
 
-<section id="lifestyle" class="content">
-    <h2>🌿 Lifestyle</h2>
-    <article>
-        <h3>Health, Culture & Relationships</h3>
-        <p>Tips and stories that matter at every stage of life.</p>
-    </article>
-</section>
-
-<section id="tech" class="content">
-    <h2>💻 Technology</h2>
-    <article>
-        <h3>Tech Trends</h3>
-        <p>Gadgets, AI, apps, and the future of technology.</p>
-    </article>
-</section>
-
-
-<footer>
-    <p>© 2025 PulseHub | Built for all generations</p>
+<!-- FOOTER -->
+<footer class="py-4 border-top">
+  <div class="container text-center">
+    <p class="mb-1 fw-semibold">
+      SOUNDPLAY HUB
+      <span class="accent-orange">●</span>
+      <span class="text-green">2025</span>
+    </p>
+    <small class="text-muted">
+      Entertainment • News • Sports • Lifestyle • Tech
+    </small>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
